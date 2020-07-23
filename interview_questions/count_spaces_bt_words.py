@@ -1,5 +1,6 @@
 def count_spaces(string):
     words = string.split(" ")
+    print(words)
     count = 1
     resutl_str = "" +words[0]
 
@@ -8,8 +9,13 @@ def count_spaces(string):
             count += 1
         else:
             resutl_str += str(count)
-            count += 1
+            count = 1
             resutl_str += words[i]
+    if count != 0:
+        resutl_str += str(count)
     return resutl_str
+
+string = "hello  world how  are  you "
+print(count_spaces(string))
 
 
