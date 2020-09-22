@@ -25,7 +25,7 @@ string = "geeks for geeks now practice"
 w1 = "geeks"
 w2 = "practice"
 
-print minDistance(string, w1, w2)
+# print minDistance(string, w1, w2)
 
 
 def minDistance_efficient(s, w1, w2):

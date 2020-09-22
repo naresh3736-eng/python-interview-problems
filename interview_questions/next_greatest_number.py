@@ -15,6 +15,6 @@ def nextgreatest(arr):
 
 
 n = 38276
-#n = 59853
+n = 59853
 array = list(str(n))
 nextgreatest(array)

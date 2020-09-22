@@ -28,6 +28,7 @@ class LinkedList:
         while cureent_node.next != None:
             cureent_node = cureent_node.next
             elements.append(cureent_node.data)
+        return elements
 
     def get(self, index):
         if index>=self.size():
@@ -56,8 +57,8 @@ class LinkedList:
             curr_idx += 1
 
 mylist = LinkedList()
-mylist.display()
+print(mylist.display())
 
 mylist.add(1)
 mylist.add(2)
-mylist.display()
+print(mylist.display())

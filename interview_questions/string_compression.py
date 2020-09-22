@@ -8,9 +8,9 @@ def stringCompression(string):
         if string[i] == string[i+1]:
             count += 1
         else:
-            if count >= 1:
-                result += str(count)
-
+            # if count >= 1:
+            #     result += str(count)
+            result += str(count)
             result += string[i+1]
             count = 1
 
@@ -20,4 +20,4 @@ def stringCompression(string):
     return result
 
 
-print stringCompression("abbccd")
+print stringCompression("abbccdd")
