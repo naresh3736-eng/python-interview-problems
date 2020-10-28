@@ -35,7 +35,7 @@ def minMoves_rec(start, step, dest):
     return min(pos, neg)
 
 
-print minMoves_rec(0,0,11)
+# print minMoves_rec(0,0,11)
 
 
 # optimized solution
@@ -52,4 +52,4 @@ def minMoves_efficient(target):
 
     return step
 
-print minMoves_efficient(11)
+print minMoves_efficient(2)
