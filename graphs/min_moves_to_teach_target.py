@@ -52,4 +52,4 @@ def minMoves_efficient(target):
 
     return step
 
-print minMoves_efficient(2)
+print(minMoves_efficient(2))

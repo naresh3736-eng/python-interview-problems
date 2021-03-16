@@ -11,4 +11,4 @@ def validParanthesis(string):
 
     return len(stack) == 0
 
-print validParanthesis("{([()])}")
+print(validParanthesis("{([()])}"))

@@ -54,5 +54,5 @@ def minDistance_efficient(s, w1, w2):
 
     return min_dist
 
-print minDistance_efficient(string, w1, w2)
+print(minDistance_efficient(string, w1, w2))
 

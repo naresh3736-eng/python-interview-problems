@@ -7,7 +7,6 @@ def stringMultiplication(s1, s2):
     for i in range(len(s1)):
         for j in range(len(s2)):
             result[i+j] += int(s1[i]) * int(s2[j])
-    print result
 
     for k in range(0, len(result)-1):
         mod = result[k]%10
@@ -19,4 +18,4 @@ def stringMultiplication(s1, s2):
 
     return output
 
-print stringMultiplication("25", "25")
+print(stringMultiplication("25", "25"))

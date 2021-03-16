@@ -28,4 +28,4 @@ for item in range(vertices):
     if not visited[item]:
         toposort(item)
 
-print output
+print(output)

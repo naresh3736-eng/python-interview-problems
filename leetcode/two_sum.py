@@ -8,13 +8,18 @@ Example:
 
 def twoSum(nums, target):
     lookup = {}
+    result = []
     for i, num in enumerate(nums):
         compliment = target - num
         if compliment in lookup:
-            return [lookup[compliment], i]
+            result.append([compliment, num])
+            #return [lookup[compliment], i]
+
         lookup[num] = i
+        print(lookup)
+    return result
 
 
-nums = [2,7,11,15]
+nums = [8,2,7,11,15,1,8]
 target = 9
 print(twoSum(nums, target))

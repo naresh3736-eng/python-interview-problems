@@ -28,7 +28,7 @@ Output:
 
 Solution:
 1. Do a BFS search and mark 0 element as visited.
-2. For each non zero element that is not visited check its left, right, top and bottom elements and increase the non visited element value by 1 and mark it as visitied
+2. For each non zero element that is not visited check its left, right, top and bottom elements and increase the non visited element value by 1 and mark it as visited
 
 '''
 

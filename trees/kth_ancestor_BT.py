@@ -28,7 +28,7 @@ def find_kth_ancestor(root, n, k, node):
 
     generate_ancestors(root, ancestors)
 
-    print ancestors
+    print(ancestors)
 
     count = 0
 

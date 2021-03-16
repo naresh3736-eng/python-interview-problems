@@ -35,7 +35,7 @@ def shortestChainLen(start, target, L):
     queue.append(item)
 
     while len(queue) > 0:
-        curr = queue.pop()
+        curr = queue.pop(0)
 
         for word in L:
             temp = word
@@ -61,7 +61,7 @@ D.append("poin")
 D.append("plea")
 start = "toon"
 target = "plea"
-print "Length of shortest chain is: %d"% shortestChainLen(start, target, D)
+print("Length of shortest chain is: %d"% shortestChainLen(start, target, D))
 
 
 

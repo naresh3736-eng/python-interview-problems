@@ -16,11 +16,10 @@ def findPath(graph, start, end, path=[]):
     if start == end:
         return path
 
-    if not graph.has_key(start):
+    if not graph.get(start):
         return None
 
     for node in graph[start]:
-        print 'node is ' +node
         if node not in path:
             newpath = findPath(graph, node, end, path)
 
@@ -30,5 +29,5 @@ def findPath(graph, start, end, path=[]):
     return None
 
 
-print findPath(graph, 'A', 'D')
+print(findPath(graph, 'A', 'D'))
 #print graph['A']

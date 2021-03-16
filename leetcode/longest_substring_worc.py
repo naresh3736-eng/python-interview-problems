@@ -36,9 +36,10 @@ class Solution(object):
                 left_most_valid = max(left_most_valid, last_seen[let] + 1)
             last_seen[let] = i
             longest = max(longest, i - left_most_valid + 1)
+            print(longest)
 
         return longest
 
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.lengthOfLongestSubstring("abcabcbb"))
+    print(sol.lengthOfLongestSubstring("abcab"))

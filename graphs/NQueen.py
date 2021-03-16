@@ -4,7 +4,7 @@ N = 4
 def printBoard(board):
     for i in range(N):
         for j in range(N):
-            print board[i][j],
+            print(board[i][j])
         print
 
 def isSafe(board, row, col):
@@ -46,7 +46,7 @@ def solveNQ():
              [0, 0, 0, 0]
              ]
     if NQUtil(board, 0) == False:
-        print "Solution does not exist"
+        print("Solution does not exist")
         return False
 
     printBoard(board)

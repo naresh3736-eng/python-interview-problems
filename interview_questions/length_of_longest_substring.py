@@ -33,14 +33,10 @@ def lengthOfLongestSubstring(string):
     for i, letter in enumerate(string):
         if letter in last_seen:
             left_most_valid = max(left_most_valid, last_seen[letter] + 1)
-            print left_most_valid
         last_seen[letter] = i
 
-        print last_seen
-
         longest = max(longest, i-left_most_valid+1)
-        print longest
 
     return longest
 
-print lengthOfLongestSubstring("ABDEFGABEF")
+print(lengthOfLongestSubstring("ABDEFGABEF"))

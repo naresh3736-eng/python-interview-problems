@@ -10,7 +10,7 @@ def add_one_to_array(arr):
         return 0
     carry = 1
     result = [0] * (len(arr))
-    for i in xrange(len(arr)-1, -1, -1):
+    for i in range(len(arr)-1, -1, -1):
         sum = arr[i] + carry
 
         if sum == 10:
@@ -24,4 +24,4 @@ def add_one_to_array(arr):
 
     return result
 
-print add_one_to_array([1,9,9])
+print(add_one_to_array([1,9,9]))

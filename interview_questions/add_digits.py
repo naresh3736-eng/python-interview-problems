@@ -9,7 +9,7 @@ def add_digits_iterative(num):
 
     return sum
 
-print add_digits_iterative(575)
+print(add_digits_iterative(575))
 
 
 # Using recursion
@@ -19,7 +19,7 @@ def add_digits_recursion(num):
         return 0
     return num % 10 + add_digits_iterative(num/10)
 
-print add_digits_recursion(575)
+print(add_digits_recursion(575))
 
 
 # Using brute force
@@ -31,4 +31,4 @@ def add_digits_bruteForce(num):
 
     return sum
 
-print add_digits_bruteForce(575)
+print(add_digits_bruteForce(575))

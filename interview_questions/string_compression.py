@@ -20,4 +20,4 @@ def stringCompression(string):
     return result
 
 
-print stringCompression("abbccdd")
+print(stringCompression("abbccdd"))

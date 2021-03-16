@@ -18,4 +18,4 @@ def quickSort(alist):
     return quickSort(smaller) + equal + quickSort(larger)
 
 nlist = [54,26,93,17,77,31,44,55,20]
-print quickSort(nlist)
+print(quickSort(nlist))

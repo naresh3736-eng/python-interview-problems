@@ -18,5 +18,17 @@ def maximum_profit(stock_list):
     return max_profit
 
 alist = [10,13,3,10]
-print maximum_profit(alist)
+print(maximum_profit(alist))
+
+def maxinum_profit2(stock_list):
+    profit = 0
+    max_profit = 0
+    for i in range(1, len(stock_list)):
+        if stock_list[i] > stock_list[i-1]:
+            profit += stock_list[i] - stock_list[i-1]
+            max_profit = max(max_profit, profit)
+    return profit
+
+alist1 = [7,1,5,3,6,4]
+print(maxinum_profit2(alist))
 

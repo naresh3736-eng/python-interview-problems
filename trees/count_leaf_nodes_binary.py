@@ -22,7 +22,7 @@ root.right = node(3)
 root.left.left = node(4)
 root.left.right = node(5)
 
-print count_leaf_nodes_recursive(root)
+print(count_leaf_nodes_recursive(root))
 
 
 def count_leaf_nodes_iterative(root):
@@ -50,4 +50,4 @@ root.right = node(3)
 root.left.left = node(4)
 root.left.right = node(5)
 
-print count_leaf_nodes_iterative(root)
+print(count_leaf_nodes_iterative(root))

@@ -15,7 +15,7 @@ def findShortestPath(graph, start, end, path=[]):
     if start == end:
         return path
 
-    if not graph.has_key(start):
+    if not graph.get(start):
         return None
 
     shortest = None
@@ -29,4 +29,4 @@ def findShortestPath(graph, start, end, path=[]):
 
     return shortest
 
-print findShortestPath(graph, 'A', 'D')
+print(findShortestPath(graph, 'A', 'D'))

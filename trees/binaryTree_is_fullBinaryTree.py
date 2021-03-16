@@ -37,9 +37,9 @@ root.right.right.left = Node(80);
 root.right.right.right = Node(90);
 
 if isFullBT_recursion(root):
-    print "The Binary tree is full"
+    print("The Binary tree is full")
 else:
-    print "Binary tree is not full"
+    print("Binary tree is not full")
 
 
 # using iterative approach
@@ -84,6 +84,6 @@ root.right.right.left = Node(80);
 root.right.right.right = Node(90);
 
 if isFullBT_iterative(root):
-    print "The Binary tree is full"
+    print("The Binary tree is full")
 else:
-    print "Binary tree is not full"
+    print("Binary tree is not full")

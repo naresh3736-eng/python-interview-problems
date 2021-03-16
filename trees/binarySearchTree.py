@@ -29,7 +29,7 @@ class BST():
                 self._insert(value, current_node.right_child)
 
         else:
-            print 'value already exists'
+            print('value already exists')
 
 
     # height of a tree
@@ -78,7 +78,7 @@ class BST():
     def _inorder(self, current_node):
         if current_node != None:
             self._inorder(current_node.left_child)
-            print str(current_node.value)
+            print(str(current_node.value))
             self._inorder(current_node.right_child)
 
     # preorder traversal of a tree
@@ -89,7 +89,7 @@ class BST():
 
     def _preorder(self, current_node):
         if current_node != None:
-            print str(current_node.value)
+            print(str(current_node.value))
             self._preorder(current_node.left_child)
             self._preorder(current_node.right_child)
 
@@ -103,7 +103,7 @@ class BST():
         if current_node != None:
             self._postorder(current_node.left_child)
             self._postorder(current_node.right_child)
-            print str(current_node.value)
+            print(str(current_node.value))
 
 
 tree = BST()
@@ -117,10 +117,10 @@ tree.insert(8)
 # tree.insert(3)
 # tree.insert(6)
 #tree.insert(4)
-print "inorder"
+print("inorder")
 tree.inorder()
-print "preorder"
+print("preorder")
 tree.preorder()
-print "postorder"
+print("postorder")
 tree.postorder()
-print "tree height is " +str(tree.height())
+print("tree height is " +str(tree.height()))

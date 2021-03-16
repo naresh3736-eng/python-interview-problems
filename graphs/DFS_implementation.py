@@ -14,7 +14,7 @@ def dfs_traversal(matrix):
 
     while len(stack) >= 1:
         node = stack.pop()
-        print node
+        print(node)
 
         for i in range(0, len(visited)):
             if matrix[node][i] == 1 and visited[i] == 0:  # check if the route exista and it is visited

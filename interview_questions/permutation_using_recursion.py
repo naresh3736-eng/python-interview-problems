@@ -11,4 +11,4 @@ def permutation(string):
 
         return output
 
-print permutation("abc")
+print(permutation("abc"))

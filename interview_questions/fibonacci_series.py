@@ -17,12 +17,15 @@ def fibo(n):
 
     return result
 
+print(fibo(6))
+
 
 def fib_recursion(n):
-    if n <= 1:
-        return
+    if n == 1 or n == 2:
+        return 1
     return fib_recursion(n-1) + fib_recursion(n-2)
 
+print(fib_recursion(6))
 
 cache = {}
 def fib_memoization(n):
@@ -38,7 +41,7 @@ def fib_memoization(n):
     cache[n] = value
     return value
 
-print fib_memoization(5)
+print(fib_memoization(6))
 
 
 

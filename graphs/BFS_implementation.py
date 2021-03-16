@@ -13,7 +13,7 @@ def bfs_traversal(matrix):
     while len(queue) >= 1:
         node = queue[0]
         queue.pop(0)
-        print node
+        print(node)
 
         for i in range(0, len(visited)):
             if matrix[node][i] == 1 and visited[i] == 0:

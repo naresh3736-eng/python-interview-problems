@@ -12,7 +12,7 @@ def level_order(root):
 
     while len(queue) >= 1:
         node = queue.pop(0)
-        print node.key
+        print(node.key, end='->')
 
         if node.left:
             queue.append(node.left)

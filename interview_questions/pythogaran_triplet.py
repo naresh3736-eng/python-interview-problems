@@ -16,4 +16,4 @@ def pythogaranTriplet(arr):
             k -= 1
     return False
 
-print pythogaranTriplet([3,4,5])
+print(pythogaranTriplet([3,4,5]))

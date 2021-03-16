@@ -32,5 +32,5 @@ if __name__ == "__main__":
     s1 = "110"
     s2 = "110"
 
-    print binarySum(s1, s2)
+    print(binarySum(s1, s2))
 

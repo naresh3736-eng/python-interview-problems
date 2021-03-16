@@ -15,7 +15,7 @@ def findAllPaths(grpah, start, end, path= []):
     if start == end:
         return [path]
 
-    if not graph.has_key(start):
+    if not graph.get(start):
         return None
 
     paths = []
@@ -30,4 +30,4 @@ def findAllPaths(grpah, start, end, path= []):
     return paths
 
 
-print findAllPaths(graph, 'A', 'D')
+print(findAllPaths(graph, 'A', 'D'))

@@ -28,6 +28,6 @@ def binary_addition(str1, str2):
 
     return result[::-1]
 
-print binary_addition('11', '11')
+print(binary_addition('11', '11'))
 
 

@@ -31,10 +31,10 @@ if __name__ == "__main__":
     root.left.left = Node(4)
     root.left.right = Node(5)
 
-    print "Inorder traversal before mirror"
+    print("Inorder traversal before mirror")
     inorder(root)
 
     mirror(root)
 
-    print "Inorder traversal after mirror"
+    print("Inorder traversal after mirror")
     inorder(root)

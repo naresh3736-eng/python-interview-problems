@@ -67,5 +67,5 @@ root.right.right = Node(5)
 # Convert binary tree to BST
 binaryTree_to_BST(root)
 
-print "Following is the inorder traversal of the converted BST"
+print("Following is the inorder traversal of the converted BST")
 printInorder(root)

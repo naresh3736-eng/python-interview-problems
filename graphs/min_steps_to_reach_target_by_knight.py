@@ -55,4 +55,4 @@ if __name__=='__main__':
     N = 30
     knightpos = [1, 1]
     targetpos = [30, 30]
-    print minStepsToReachTarget(knightpos, targetpos, N)
+    print(minStepsToReachTarget(knightpos, targetpos, N))
