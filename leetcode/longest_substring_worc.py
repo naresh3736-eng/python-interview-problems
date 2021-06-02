@@ -36,10 +36,23 @@ class Solution(object):
                 left_most_valid = max(left_most_valid, last_seen[let] + 1)
             last_seen[let] = i
             longest = max(longest, i - left_most_valid + 1)
-            print(longest)
+            # print(longest)
 
+        return longest
+
+    def lengthOfLongestSubstring1(self, s):
+        longest = 0
+        start = 0
+        lookup = {}
+        for i in range(len(s)):
+            if s[i] in lookup and start <= lookup[s[i]]:
+                start = lookup[s[i]] + 1
+            else:
+                longest = max(longest, i-start+1)
+            lookup[s[i]] = i
         return longest
 
 if __name__ == "__main__":
     sol = Solution()
     print(sol.lengthOfLongestSubstring("abcab"))
+    print(sol.lengthOfLongestSubstring1("ABDEFGABDEF"))

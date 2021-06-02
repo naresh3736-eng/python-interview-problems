@@ -66,3 +66,63 @@ if __name__ == "__main__":
     A[2].next.next = Node(10)
 
     head = mergeKList(A, k)
+
+'''
+intutive approach where we append all the list of list elements into a new list and sort it. This approach
+takes extra space
+'''
+
+def intuitiveApproach(lists: list):
+    res = []
+    dummy = head = Node(0)
+    for l in lists:
+        while l:
+            res.append(l.val)
+            l = l.next
+    for x in sorted(res):
+        dummy.next = Node(x)
+        dummy = dummy.next
+    return head.next
+
+
+'''
+efficient solution to above using merge sort
+'''
+
+def merge(l1: Node, l2: Node):
+    curr = dummy = Node(0)
+    while l1 and l2:
+        if l1.data <= l2.data:
+            curr.next = Node(l1.data)
+            curr = curr.next
+            l1 = l1.next
+        else:
+            curr.next = Node(l2.data)
+            curr = curr.next
+            l2 = l2.next
+    if l1:
+        curr.next = l1
+    else:
+        curr.next = l2
+
+    '''
+    while l1:
+        curr.next = Node(l1.val)
+        curr = curr.next
+        l1 = l1.next
+    while l2:
+        curr.next = Node(l2.val)
+        curr = curr.next
+        l2 = l2.next
+    '''
+    return dummy.next
+
+def mergeKlists(lists: list):
+    if not lists:
+        return
+    if len(lists) == 1:
+        return lists[0]
+    mid = len(lists)//2
+    l = mergeKlists(lists[:mid])
+    r = mergeKlists(lists[mid:])
+    return merge(l, r)

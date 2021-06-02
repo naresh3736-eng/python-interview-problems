@@ -38,4 +38,4 @@ arr = [2,4,3,6,1,8,9,10,11,12]
 
 arr1 = [2,4,3,6,1,8]
 
-print longest_consecutive_seq(arr1)
+print(longest_consecutive_seq(arr1))

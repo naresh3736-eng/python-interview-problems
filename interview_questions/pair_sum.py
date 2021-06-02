@@ -19,7 +19,7 @@ def pairSum(arr, target):
         else:
             output.append([min(num, compliment), max(num, compliment)])
 
-    print '\n'.join(map(str, list(output)))
+    print('\n'.join(map(str, list(output))))
 
 
 
@@ -39,9 +39,9 @@ def pari_sum(arr, target):
             if abs(lookup[compliment] - i) == 1:
                 output.append((compliment, num))
         lookup[num] = i
-        print lookup
-        print output
+        print(lookup)
+        print(output)
 
     return output
 
-print pari_sum([1,3,3,1], 4)
+print(pari_sum([1,3,3,1], 4))

@@ -39,4 +39,21 @@ def lengthOfLongestSubstring(string):
 
     return longest
 
-print(lengthOfLongestSubstring("ABDEFGABEF"))
+# print(lengthOfLongestSubstring("ABDEFGABEF"))
+
+# Sol2
+
+def lengthOfLongestSubstring2(s):
+    if len(s) == 0:
+        return 0
+    lookup = {}
+    longest = start = 0
+    for i in range(len(s)):
+        if s[i] in lookup and start <= lookup[s[i]]:
+            start = lookup[s[i]] + 1
+        else:
+            longest = max(longest, i-start+1)
+        lookup[s[i]] = i
+    return longest
+
+print(lengthOfLongestSubstring2("ABDEFGABEF"))

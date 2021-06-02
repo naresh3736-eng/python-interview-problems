@@ -11,7 +11,7 @@ def nextgreatest(arr):
 
     arr[i:] = reversed(arr[i:])
 
-    print int(''.join(arr))
+    print(int(''.join(arr)))
 
 
 n = 38276
