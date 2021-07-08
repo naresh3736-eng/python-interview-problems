@@ -32,7 +32,7 @@ class LinkedList:
 
     def get(self, index):
         if index>=self.size():
-            print 'Error, Index out of range'
+            print('Error, Index out of range')
             return None
         curr_idx = 0
         current_node = self.head
@@ -44,7 +44,7 @@ class LinkedList:
 
     def remove(self, index):
         if index>= self.size():
-            print 'Error, Index out of range'
+            print('Error, Index out of range')
             return None
         curr_idx = 0
         current_node = self.head

@@ -43,3 +43,21 @@ root.right.right = Node(-25)
 root.right.right.left   = Node(3)
 root.right.right.right  = Node(4)
 print("Max path sum is " ,findMaxPathSum(root))
+
+# Leetcode
+
+
+
+def maxPahSumLeetcode(root: Node):
+    maximum = float('-inf')
+
+    def dfs(root, maximum):
+        if root is None:
+            return 0
+        leftmax = max(0, dfs(root.left, maximum))
+        rightmax = max(0, dfs(root.right, maximum))
+        maximum = max(maximum, leftmax + rightmax + root.data)
+        return max(leftmax, rightmax) + root.data
+
+    dfs(root, maximum)
+    return maximum

@@ -17,7 +17,7 @@ def maximum_profit(stock_list):
 
     return max_profit
 
-alist = [10,13,3,10]
+alist = [7,1,5,3,6,4]
 print(maximum_profit(alist))
 
 def maxinum_profit2(stock_list):

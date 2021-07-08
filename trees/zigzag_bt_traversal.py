@@ -16,7 +16,7 @@ def zigzag(root):
 
     while len(current_value) > 0:
         temp = current_value.pop()
-        print(temp.data)
+        print(temp.data, end='->')
 
         if left_to_right:
             if temp.left:
@@ -43,3 +43,42 @@ root.right.left = Node(5)
 root.right.right = Node(4)
 print("Zigzag Order traversal of binary tree is")
 zigzag(root)
+
+# leetcode to print the nodes in sub lists e.g. Input: root = [3,9,20,null,null,15,7] Output: [[3],[20,9],[15,7]]
+
+def leetcodeProblem(root: Node):
+    if root is None:
+        return []
+    current_val = []
+    next_val = []
+    result = []
+    left_to_right = True
+    current_val.append(root)
+    while len(current_val) > 0:
+        temp = []
+        #print(curr.data, end='->')
+        size = len(current_val)
+        while size != 0:
+            curr = current_val.pop()
+            temp.append(curr.data)
+            if left_to_right:
+                if curr.left:
+                    next_val.append(curr.left)
+                if root.right:
+                    next_val.append(root.right)
+            else:
+                if curr.right:
+                    next_val.append(curr.right)
+                if curr.left:
+                    next_val.append(curr.left)
+            size -= 1
+
+        if len(current_val) == 0:
+            left_to_right = False
+            current_val, next_val = next_val, current_val
+        result.append(temp)
+    print(result)
+
+root1 = Node(1)
+print('\n')
+leetcodeProblem(root1)

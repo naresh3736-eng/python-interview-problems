@@ -29,3 +29,27 @@ root.right.left = node(6)
 root.right.right = node(7)
 
 level_order(root)
+
+# leetcode problem level order to print nodes as lists e.g. Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]]
+
+def leetcodeProblem(root: node):
+    if root is None:
+        return []
+    result = []
+    queue = []
+    queue.append(root)
+    while len(queue) > 0:
+        temp = []
+        size = len(queue)
+        while size != 0:
+            curr = queue.pop(0)
+            temp.append(curr.key)
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)
+            size -= 1
+        result.append(temp)
+    return result
+
+print('\n', leetcodeProblem(root))

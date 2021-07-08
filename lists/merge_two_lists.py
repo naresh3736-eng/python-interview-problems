@@ -29,4 +29,4 @@ def mergeTwoLists(arr1, arr2):
 arr1 = [1,5]
 arr2 = [2,4,6]
 
-print mergeTwoLists(arr1, arr2)
+print(mergeTwoLists(arr1, arr2))

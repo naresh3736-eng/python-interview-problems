@@ -105,6 +105,6 @@ if __name__ == "__main__":
 
     sol1 = Solution1()
     sol2 = Solution2()
-    # output = sol.addTwoNumbers(l1, l2)
+    output = sol1.addTwoNumbers(l1, l2)
     output = sol2.addTwoNumbers(l1, l2)
     print(linked_list_str(output))
